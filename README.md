@@ -1,30 +1,70 @@
-# React + TypeScript + Vite
+# Quiz Adventure App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Quiz Adventure App, an interactive platform where users can learn and explore various programming topics through quizzes and courses.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication:** Secure user login and registration system.
+- **Dynamic Quizzes:** Engaging quizzes on HTML, CSS, JavaScript, and React.
+- **Interactive Courses:** Explore and learn programming concepts through interactive courses.
+- **Leaderboard:** Track your progress and compete with other users.
+- **Responsive Design:** Accessible on various devices.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js and npm installed
+- Firebase project for authentication
+- Firebase Web API Key
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+   ```bash
+   git https://github.com/Neeraaaj/EmitrrAssignment
+   cd EmitrrAssignment
+
+2. Install Dependencies
+# Install server dependencies
+cd server
+npm install
+
+# Install client dependencies
+cd ../client
+npm install
+
+3. Configure Firebase:
+
+Set up a Firebase project: Firebase Console
+Add a web app to obtain the Firebase configuration.
+Copy your firebase project link and paste it in firebasae.js file
+
+4. Run the app
+
+# Start the server
+cd ../server
+npm start
+
+# Start the client
+cd ../client
+npm start
+
+#Open your browser and navigate to http://localhost:3000 to view the app.
+
+#Usage
+1. Register or log in to your account.
+2. Explore courses and quizzes on HTML, CSS, JavaScript, and React.
+3. Compete with other users on the leaderboard.
+4. Enjoy learning and have fun!
+
+#Folder Structure
+/server: Express.js server handling API and authentication.
+/: React.js client application.
+
+#Contributing
+Feel free to contribute to the development of this project. Fork the repository, make your changes, and submit a pull request.
+
+#License
+This Project is licensed under the MIT License.
+
