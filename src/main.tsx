@@ -19,11 +19,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/' element={<App />} />
         <Route path='/signin' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
-        <Route path={`/Quiz/:username`} element={<QuizInterface />} />
-        <Route path={`/HTML/:username`} element={<HTML />} />
-        <Route path={`/CSS/:username`} element={<CSS />} />
-        <Route path={`/JS/:username`} element={<JS/>} />
-        <Route path={`/REACT/:username`} element={<REACT />} />
+        <Route path={`/Quiz/username`} element={<QuizInterface />} />
+        <Route path={`/HTML/username`} element={<HTML />} />
+        <Route path={`/CSS/username`} element={<CSS />} />
+        <Route path={`/JS/username`} element={<JS/>} />
+        <Route path={`/REACT/username`} element={<REACT />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
       </Routes>
     </LeaderboardProvider>
