@@ -22,7 +22,7 @@ const Login = () => {
     .then(() => {
       toast.success("Success");
       setTimeout(() => {
-        navigate(`https://vercel.com/neeraaaj/emitrr-assignment/Quiz/:${username}`, {state : { username } })
+        navigate(`https://emitrr-assignment-rho.vercel.app/Quiz/:${username}`, {state : { username } })
       }, 1000)
     })
     .catch((err) => toast.error(err.message))
